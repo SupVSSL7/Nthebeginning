@@ -1,0 +1,120 @@
+'''for hi in range(5):
+  print(hi)
+print("-"*10)
+
+for lo in range(7, -7, -3):
+  print(lo)
+
+phrase = "monty python"
+for letter in phrase:
+  print(letter, end = "-")
+print()
+
+print("end")
+
+
+
+
+def celsius(x):
+    """Converts the temperature from Fahrenheit to Celsius"""
+    y = (x - 32) * 5 / 9
+    return y
+# Converts Fahrenheit to Celsius
+print(celsius(65))
+x = [3, -1, -10, 2, 7]
+
+filter_positives = filter(lambda n: n > 0, x)
+
+print(list(filter_positives))
+
+x = ["a", "b", "c", "d"]
+x[1] = "r"
+x[2:] = ["s", "t"]
+
+print(x)
+
+
+
+
+# Dictionary of dictionaries
+europe = { 'spain': { 'capital':'madrid', 'population':46.77 },
+           'france': { 'capital':'paris', 'population':66.03 },
+           'germany': { 'capital':'berlin', 'population':80.62 },
+           'norway': { 'capital':'oslo', 'population':5.084 } }
+
+# Print out the capital of France
+print(europe['france']['capital'])
+
+# Create sub-dictionary data 
+data = { 'capital':'rome', 'population':59.83 }
+
+data2 = {'capital': 'Habana', 'population': 38.25}
+# Add data to europe under key 'italy'
+europe['italy'] = data
+europe['cuba'] = data2
+# Print europe
+print(europe)
+
+
+
+import random
+import math
+
+lst = ["he", "hi", "ho", "hello"]
+nums = [1,4,3,2,5,6,7]
+
+random_pick = random.choice(lst)
+random_num = random.choice(nums)
+
+if random_pick == "ho":
+  print("HO YOU STINK! LOL juustkidding")
+  print("You get a lucky number!" + str(random_num))
+  if random_num == 7:
+    print("You lucky Ho! LOL")
+  else:
+    print("Yeah, you're just stinky.. LOL")
+print(random_pick)
+
+for t in range(11):
+  for f in range(t*2):
+    print(t,f)  
+    
+   
+
+lst = [[1,2],[3,4],[5,6],[7,8]]
+booboo = []
+
+for i in range(len(lst)):
+  interior_lst = lst[i]
+  booboo.append(interior_lst)
+    
+  print(booboo)
+
+
+
+
+words = ("hello", "name", "this", "is", "word")
+
+target = "name" 
+
+for word in words:
+  if word == target:
+    print("I FOUND THE WORD!")
+    print(target)
+    break
+  else:
+    print("I didn't find the word...")
+    print("FVKING A")'''
+    
+    
+lst = ["tim", "is", "the", "best", "instructor"]
+string = "..."
+tupl = ("and", "he", "is", "great")
+
+
+for item in lst:
+    print (item) 
+for character in string:
+    print(character)    
+for item in tupl:
+    print(item) 
