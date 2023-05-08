@@ -104,7 +104,7 @@ for word in words:
     break
   else:
     print("I didn't find the word...")
-    print("FVKING A")'''
+    print("FVKING A")
     
     
 lst = ["tim", "is", "the", "best", "instructor"]
@@ -118,3 +118,57 @@ for character in string:
     print(character)    
 for item in tupl:
     print(item) 
+
+characters = set()
+
+while True:
+    character = input("Enter a character: ")
+    if len(character) > 1:
+        break
+
+    if character in characters:
+        break    
+
+    characters.add(character)    
+
+print(f"Number of unique characters entered: {len(characters)}") 
+
+
+
+number_of_entries = 0
+
+while True:
+    number = int(input("Enter a number: "))
+    number_of_entries += 1
+
+
+    if number_of_entries == 5:
+        break
+    tot_of_entries = sum(number_of_entries)
+print(F"Your {number_of_entries} equal {tot_of_entries}.") '''
+
+
+
+numerator = input("Enter the numerator: ")
+denominator = input("Enter the denominator: ")
+
+try:
+    numerator = float(numerator)
+except Exception as e:
+    print("The numerator is not a number.")
+
+try:    
+    denominator = float(denominator)
+    if denominator == 0:
+        print("You cannot divide by 0.")
+except Exception as e:
+    print("The denominator is not a number.") 
+
+try:
+    result = numerator / denominator  
+    print(f"The result of this division is {result}.")
+except Exception as e:
+    print("This division cannot be performed.")
+finally:
+    print("Goodbye!") 
+
